@@ -78,7 +78,7 @@ class DxUserObject(object):
     def getUserName(self):
         if self._use_email_as_username():
             return self.context.email
-        return self.context.username
+        return self.context.getId()
 
     def get_full_name(self):
         names = [
