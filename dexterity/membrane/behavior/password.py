@@ -102,11 +102,11 @@ class IProvidePasswords(IProvidePasswordsSchema):
     """Add password fields"""
 
     # Putting this in a separate fieldset for the moment:
-    model.fieldset(
-        'membership',
-        label=_(u"Membership"),
-        fields=['password', 'confirm_password']
-    )
+    # model.fieldset(
+    #     'membership',
+    #     label=_(u"Membership"),
+    #     fields=['password', 'confirm_password']
+    # )
 
     directives.omitted('password', 'confirm_password')
     directives.no_omit(IAddForm, 'password', 'confirm_password')
