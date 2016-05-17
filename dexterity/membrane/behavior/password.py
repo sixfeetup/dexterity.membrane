@@ -71,12 +71,12 @@ class IProvidePasswordsSchema(model.Schema):
 
     password = schema.Password(
         title=_(u"Password"),
-        required=False,
+        required=True,
     )
 
     confirm_password = schema.Password(
         title=_(u"Confirm Password"),
-        required=False,
+        required=True,
     )
 
     @invariant
